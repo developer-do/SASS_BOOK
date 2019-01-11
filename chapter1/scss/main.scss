@@ -1,0 +1,53 @@
+@import '_sub.scss';
+
+header {
+  background-color: $header-back;
+  display: block;
+  height: 100px;
+  
+  nav {
+    ul {
+      list-style:none;
+      float: right;
+      li {
+        display: inline-block;
+        a {
+          display:block;
+          padding:5px 3px;
+          margin: 10px 20px;
+          text-decoration: none;
+          color: $default-color;
+        }
+        a:hover {
+          border-bottom: 1px dotted $navhover-color;
+          color: $navhover-color;
+        }
+      }
+    }
+  }
+}
+
+aside {
+  width: 250px;
+  float: left;
+  nav {
+    ul {
+      list-style:none;
+      padding: 0;
+      margin-top: 30px;
+      li {
+        a {
+          display:block;
+          padding:5px 10px;
+          text-decoration: none;
+          color: $default-color;
+          width: 100px;
+        }
+        a:hover {
+          border-bottom: 1px dotted $aside-hover;
+          color: $aside-hover;
+        }
+      }
+    }
+  }
+}
