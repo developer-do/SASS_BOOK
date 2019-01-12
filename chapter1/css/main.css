@@ -1,7 +1,16 @@
+.box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px; }
+
 header {
   background-color: #eee;
   display: block;
   height: 100px; }
+  header nav:after {
+    content: "";
+    display: block;
+    clear: both; }
   header nav ul {
     list-style: none;
     float: right; }
@@ -32,6 +41,29 @@ aside {
       width: 100px; }
     aside nav ul li a:hover {
       border-bottom: 1px dotted #ff0000;
-      color: #ff0000; }
+      color: #ff0000;
+      font-weight: bold; }
+
+article {
+  width: calc(100% - 250px);
+  float: right;
+  text-align: center; }
+  article .box_wrap:after {
+    content: "";
+    display: block;
+    clear: both; }
+  article .box_wrap .box {
+    float: left;
+    width: calc(100% / 4);
+    height: 50px;
+    line-height: 50px;
+    background: #999;
+    color: #fff;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    cursor: default; }
+    article .box_wrap .box:hover {
+      background: #fff;
+      color: #252525; }
 
 /*# sourceMappingURL=main.css.map */

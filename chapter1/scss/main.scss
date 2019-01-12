@@ -1,11 +1,26 @@
 @import '_sub.scss';
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+.box {
+  @include border-radius(20px);
+}
+
 header {
   background-color: $header-back;
   display: block;
   height: 100px;
   
   nav {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
     ul {
       list-style:none;
       float: right;
@@ -27,6 +42,7 @@ header {
   }
 }
 
+
 aside {
   width: 250px;
   float: left;
@@ -46,7 +62,35 @@ aside {
         a:hover {
           border-bottom: 1px dotted $aside-hover;
           color: $aside-hover;
+          font-weight: bold;
         }
+      }
+    }
+  }
+}
+
+article {
+  width: calc(100% - 250px);
+  float: right;
+  text-align: center;
+  .box_wrap {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .box {
+      float: left;
+      width: calc(100% / 4);
+      height: 50px;
+      line-height: 50px;
+      background: $default-color;
+      color: #fff;
+      transition: all .4s;
+      cursor: default;
+      &:hover {
+        background: #fff;
+        color: #252525;
       }
     }
   }

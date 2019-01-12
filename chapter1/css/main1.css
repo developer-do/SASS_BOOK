@@ -1,0 +1,90 @@
+body {
+  background-color: #ecf0f1;
+}
+
+#box_wrap {
+  margin-bottom: 20px;
+}
+#box_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#box_wrap .box {
+  width: calc(100% / 4);
+  float: left;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #34495e;
+  color: #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  border-radius: 25px;
+}
+#box_wrap .box:hover {
+  border-radius: 0px;
+  background: #fff;
+  color: #34495e;
+}
+
+#message .message, #message .success, #message .error, #message .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+#message .message span, #message .success span, #message .error span, #message .warning span {
+  display: block;
+  text-align: center;
+}
+#message .success {
+  border-color: green;
+}
+#message .error {
+  border-color: red;
+}
+#message .warning {
+  border-color: yellow;
+}
+
+#container aside nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container aside nav ul {
+  list-style: none;
+  float: right;
+}
+#container aside nav ul li {
+  display: block;
+}
+#container aside nav ul li a {
+  display: block;
+  padding: 5px 3px;
+  margin: 10px 20px;
+  text-decoration: none;
+  color: #505050;
+}
+#container aside nav ul li a:hover {
+  border-bottom: 1px solid #1abc9c;
+  color: #1abc9c;
+}
+
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complimentary"] {
+  float: right;
+  width: 37.5%;
+}
+
+/*# sourceMappingURL=main1.css.map */
