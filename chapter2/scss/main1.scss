@@ -1,0 +1,46 @@
+$bgcolor: #007bff;
+$white: #fff;
+$black: #000;
+
+article {
+  &.section1 {
+    width: 800px;
+    margin: 10px auto;
+    font: {
+      size: 14px;
+      family: 'Nanum Gothic', sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 50px;
+      th, td {
+        padding: 12px 8px;
+        text-align: center;
+        border: 1px solid rgba($black, 0.4);
+      }
+      th {
+        background-color: rgba($bgcolor, 0.8);
+        color: $white;
+        border: {
+          top: 2px solid $black;
+          bottom: 2px solid $black;
+        }
+      }
+      td {
+        &:nth-child(2) {
+          text-align: left;
+          padding-left: 15px;
+        }
+      }
+      tr {
+        transition: all .4s;
+        &:hover {
+          background: rgba($bgcolor, 0.6);
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
