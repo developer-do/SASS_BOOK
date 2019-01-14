@@ -1,0 +1,44 @@
+@mixin boldtext($size, $color) {
+  font: {
+    family: 'Malgun Gothic', sans-serif;
+    weight: bold;
+    size: $size;
+  }
+  color: $color;
+  @content;
+}
+@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+$values: #ff0000, #00ff00, #0000ff;
+$value-map: (text: #252525, background: lightblue, border: pink);
+
+@mixin conbox {
+  header {
+    height: 100px;
+    p {
+      @content;
+    }
+  }
+}
+
+@mixin test($condition) {
+  $color: if($condition, blue, red);
+  color: $color;
+}
+
+@mixin txt($weight) {
+  color: white;
+  padding: 5px;
+  @if $weight == bold { font-weight: bold; }
+  @else if $weight == light { font-weight: 100; }
+  @else if $weight == heavy { font-weight: 900; }
+  @else { font-weight: normal; }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACJ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;ACFZ,IAAK;EACH,WAAW,EAAE,SAAS;;ACMxB,KAAM;EACJ,OAAO,EALC,eAAe;EAMvB,WAAW,EAJC,sBAAsB;;AAapC,MAAO;EACL,OAAO,EANE,iBAAiB;EAO1B,WAAW,EALE,sBAAsB;;AAQrC,SAAU;EAER,SAAS,EAAE,IAAI;EFzBjB,eAAM;IACJ,MAAM,EAAE,CAAC;IACT,OAAO,EAAE,CAAC",
+"sources": ["../import/_2.5color.scss","../import/_2.5font.scss","../scss/2-5.scss"],
+"names": [],
+"file": "2-5.css"
+}

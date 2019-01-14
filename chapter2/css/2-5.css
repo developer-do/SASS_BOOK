@@ -1,0 +1,22 @@
+.box1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Verdana"; }
+
+#main {
+  content: "First content";
+  new-content: "First time reference"; }
+
+#main2 {
+  content: "Second content?";
+  new-content: "First time reference"; }
+
+.boxmodel {
+  font-size: 12px; }
+  .boxmodel .box1 {
+    margin: 0;
+    padding: 0; }
+
+/*# sourceMappingURL=2-5.css.map */

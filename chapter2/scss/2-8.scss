@@ -1,0 +1,30 @@
+.sidebar {
+  width: 300px;
+  height: 50px;
+  background: lightblue;
+  // @media screen and (orientation: landscape) {
+  //   width: 500px;
+  // }
+}
+
+@media (min-width: 766px) {
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 500px;
+    }
+  }
+}
+
+$media: screen;
+$feature: landscape;
+$value: 500px;
+.sidebar1 {
+  width: 300px;
+  height: 50px;
+  background: lightcoral;
+  @media #{$media} {
+    @media (orientation: $feature) {
+      width: $value + 200;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.boxsample {
+  font-family: 'Malgun Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: coral;
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999; }
+
+.boxsample1 {
+  font-family: 'Malgun Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 2px pink, 2px 4px 6px coral;
+  -webkit-box-shadow: 0px 2px 2px pink, 2px 4px 6px coral;
+  box-shadow: 0px 2px 2px pink, 2px 4px 6px coral; }
+
+.primary {
+  color: #ff0000;
+  background-color: #00ff00;
+  border-color: #0000ff; }
+
+.secondary {
+  color: #252525;
+  background-color: lightblue;
+  border-color: pink; }
+
+header {
+  height: 100px; }
+header p #logo {
+  border: 1px solid red; }
+
+.boxsample2 {
+  font-family: 'Malgun Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: red;
+  border: 1px solid blue;
+  opacity: 0.5; }
+
+.boxsample3 {
+  font-family: 'Malgun Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: coral;
+  border: 3px solid lightblue;
+  opacity: 0.8; }
+
+.firstClass {
+  color: blue; }
+
+.secondClass {
+  color: red; }
+
+.txt1 {
+  background-color: #f1c40f;
+  color: white;
+  padding: 5px;
+  font-weight: bold; }
+
+.txt2 {
+  background-color: #e67e22;
+  color: white;
+  padding: 5px;
+  font-weight: 100; }
+
+.txt3 {
+  background-color: #16a085;
+  color: white;
+  padding: 5px;
+  font-weight: 900; }
+
+.txt4 {
+  background-color: #7f8c8d;
+  color: white;
+  padding: 5px;
+  font-weight: normal; }
+
+.txt5 {
+  background-color: #34495e;
+  color: white;
+  padding: 5px;
+  font-weight: normal; }

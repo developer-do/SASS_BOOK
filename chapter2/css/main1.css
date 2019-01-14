@@ -1,37 +1,71 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 article.section1 {
   width: 800px;
   margin: 10px auto;
   font-size: 14px;
-  font-family: 'Nanum Gothic', sans-serif;
-}
-article.section1 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 50px;
-}
-article.section1 table th, article.section1 table td {
-  padding: 12px 8px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-}
-article.section1 table th {
-  background-color: rgba(0, 123, 255, 0.8);
-  color: #fff;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-}
-article.section1 table td:nth-child(2) {
-  text-align: left;
-  padding-left: 15px;
-}
-article.section1 table tr {
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-article.section1 table tr:hover {
-  background: rgba(0, 123, 255, 0.6);
-  color: #fff;
-  cursor: pointer;
-}
+  font-family: 'Nanum Gothic', sans-serif; }
+  article.section1 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px; }
+    article.section1 table th, article.section1 table td {
+      padding: 12px 8px;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.4); }
+    article.section1 table th {
+      background-color: rgba(0, 123, 255, 0.8);
+      color: #fff;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000; }
+    article.section1 table td:nth-child(2) {
+      text-align: left;
+      padding-left: 15px; }
+    article.section1 table tr {
+      transition: all .4s; }
+      article.section1 table tr:hover {
+        background: rgba(0, 123, 255, 0.6);
+        color: #fff;
+        cursor: pointer; }
+
+#main {
+  border: 10px solid red;
+  background-color: #fff;
+  width: 100%; }
+
+#sidebar {
+  width: 500px;
+  display: inline-block; }
+
+#content {
+  width: 500px;
+  width: 10px;
+  display: inline-block; }
+
+#sidebar2 {
+  width: 10%;
+  height: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.6);
+  background-color: rgba(255, 0, 0, 0.2);
+  color: white; }
+
+p:before {
+  content: "Foo Bar";
+  font-family: sans-serif; }
+
+p.foo {
+  border-color: blue; }
+
+p {
+  font: 12px/30px; }
+
+/* 어렵군 */
 
 /*# sourceMappingURL=main1.css.map */

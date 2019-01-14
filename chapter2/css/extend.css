@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.box1, .box2, .box3 {
+  height: 300px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  background-image: url("../imgs/pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .box1 h1, .box2 h1, .box3 h1 {
+    font-size: 65px;
+    text-transform: capitalize; }
+  .box1 p, .box2 p, .box3 p {
+    width: 800px;
+    margin: 20px auto; }
+
+.box2 {
+  padding-top: 70px;
+  background-image: url("../imgs/pic2.jpg"); }
+  .box2 h1 {
+    font-size: 45px; }
+  .box2 p {
+    width: 500px; }
+
+.box3 {
+  background-image: url("../imgs/pic3.jpg");
+  text-shadow: 2px 2px 5px #000; }
+  .box3 h1 {
+    font-size: 80px; }
+
+.notice a.error {
+  color: red;
+  text-decoration: none;
+  font-weight: bold; }
+
+.select1, .select2 {
+  Border-bottom: 1px solid red; }
+
+.select2 {
+  padding-top: 10px; }
+
+@media print {
+  .select1, .select2 {
+    Border-bottom: 1px solid red; }
+
+  .select2 {
+    Padding-top: 10px; } }
+@media print {
+  .page {
+    width: 800px; } }
+  .page {
+    color: red; }
+
+/*# sourceMappingURL=extend.css.map */

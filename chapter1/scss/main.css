@@ -1,0 +1,94 @@
+.box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+}
+
+header {
+  background-color: #eee;
+  display: block;
+  height: 100px;
+}
+
+header nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header nav ul {
+  list-style: none;
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 5px 3px;
+  margin: 10px 20px;
+  text-decoration: none;
+  color: #999;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px dotted #ffb069;
+  color: #ffb069;
+}
+
+aside {
+  width: 250px;
+  float: left;
+}
+
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+aside nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #999;
+  width: 100px;
+}
+
+aside nav ul li a:hover {
+  border-bottom: 1px dotted #ff0000;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+article {
+  width: calc(100% - 250px);
+  float: right;
+  text-align: center;
+}
+
+article .box_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article .box_wrap .box {
+  float: left;
+  width: calc(100% / 4);
+  height: 50px;
+  line-height: 50px;
+  background: #999;
+  color: #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: default;
+}
+
+article .box_wrap .box:hover {
+  background: #fff;
+  color: #252525;
+}
+/*# sourceMappingURL=main.css.map */

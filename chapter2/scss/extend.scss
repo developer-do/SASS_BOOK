@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.box1 {
+  height: 300px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  background: {
+    image: url('../imgs/pic1.jpg');
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+  h1 {
+    font-size: 65px;
+    text-transform: capitalize;
+  }
+  p {
+    width: 800px;
+    margin: 20px auto;
+  }
+}
+.box2 {
+  @extend .box1;
+  padding-top: 70px;
+  background-image: url("../imgs/pic2.jpg");
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    width: 500px;
+  }
+}
+.box3 {
+  @extend .box1;
+  background-image: url("../imgs/pic3.jpg");
+  text-shadow:2px 2px 5px #000;
+  h1 {
+    font-size: 80px;
+  }
+}
+
+.notice a%y {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error {
+  @extend %y !optional;
+}
+
+.select1 {
+  Border-bottom: 1px solid red;
+}
+.select2 {
+  @extend .select1;
+  padding-top: 10px;
+}
+
+@media print {
+  .select1 {
+    Border-bottom: 1px solid red;
+  }
+  .select2 {
+    
+    Padding-top: 10px;
+  }
+}
+
+
+@media print {
+  .page {
+    width: 800px;
+    @at-root (without: media) {
+      color: red;
+    }
+  }
+}

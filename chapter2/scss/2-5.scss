@@ -1,0 +1,27 @@
+@import '../import/_2.5color.scss', '../import/_2.5font.scss';
+
+
+$content: "First content";
+$content: "Second content?" !default;
+$new_content: "First time reference" !default;
+
+#main {
+  content: $content;
+  new-content: $new_content;
+}
+
+$content1: "First content";
+$content1: "Second content?";
+
+$new_content2: "First time reference" !default;
+$new_content2: "Second time reference" !default;
+
+#main2 {
+  content: $content1;
+  new-content: $new_content2;
+}
+
+.boxmodel {
+  @import "../import/_2.5color.scss";
+  font-size: 12px;
+}

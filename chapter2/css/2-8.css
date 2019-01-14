@@ -1,0 +1,17 @@
+.sidebar {
+  width: 300px;
+  height: 50px;
+  background: lightblue; }
+
+@media (min-width: 766px) and (max-width: 768px) {
+  .sidebar {
+    width: 500px; } }
+.sidebar1 {
+  width: 300px;
+  height: 50px;
+  background: lightcoral; }
+@media screen and (orientation: landscape) {
+  .sidebar1 {
+    width: 700px; } }
+
+/*# sourceMappingURL=2-8.css.map */

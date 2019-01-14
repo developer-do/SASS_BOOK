@@ -1,0 +1,71 @@
+@import '../import/_mixin.scss';
+
+.boxsample {
+  @include boldtext(25px, coral);
+  @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
+.boxsample1 {
+  @include boldtext(50px, rgba(0,0,0,0.3));
+  @include box-shadow(0px 2px 2px pink, 2px 4px 6px coral);
+}
+
+
+.primary {
+  @include colors($values...);
+}
+.secondary {
+  @include colors($value-map...);
+}
+
+
+@include conbox {
+  #logo {
+    border:1px solid red;
+  }
+}
+
+
+.boxsample2 {
+  @include boldtext(12px, red) {
+    border:1px solid blue;
+    opacity: 0.5;
+  }
+}
+.boxsample3 {
+  @include boldtext(14px, coral);
+  border: 3px solid lightblue;
+  opacity: 0.8;
+}
+
+.firstClass {
+  @include test(true);
+}
+
+.secondClass{ 
+  @include test(false);
+}
+
+.txt1 {
+  background-color: #f1c40f;
+  @include txt(bold);
+}
+
+.txt2 {
+  background-color: #e67e22;
+  @include txt(light);
+}
+
+.txt3 {
+  background-color: #16a085;
+  @include txt(heavy);
+}
+
+.txt4 {
+  background-color: #7f8c8d;
+  @include txt(none);
+}
+
+.txt5 {
+  background-color: #34495e;
+  @include txt(normal);
+}

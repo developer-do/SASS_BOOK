@@ -1,0 +1,78 @@
+$weight: bold;
+.firstClass {
+  $color: if(false, blue, red);
+  color: $color;
+  @if $weight == bold { font-weight: bold; }
+  @else if $weight == light { font-weight: 100; }
+  @else if $weight == heavy { font-weight: 900; }
+  @else { font-weight: normal; }
+}
+
+.secondClass {
+  $color: if(true, blue, red);
+  color: $color;
+  @if bold == bold { font-weight: bold; }
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.list_wrap {
+  .list {
+    background: gainsboro;
+  }
+}
+
+@for $i from 1 through 5 {
+  .list#{$i} {
+    width: (100*$i)+px;
+  }
+}
+$ppl: (usr1: bob, usr2: john, usr3: bill);
+
+@each $key, $usr in $ppl {
+  .#{$usr}-icon:after {
+    content: "#{$usr}";
+    font-size: 20px;
+    color: red;
+  }
+}
+
+$usr1 : usr1, black, 1;
+$usr2 : usr2, red, 2;
+$usr3 : usr3, blue, 3;
+
+@each $u, $c, $v in $usr1, $usr2, $usr3 {
+  .#{$u}-name1:after {
+    content: "#{$u}";
+    border: $v*2+px solid $c;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+
+@each $usr, $color, $value in (usr1, black, 1), (usr2, red, 2), (usr3, blue, 3){
+  .#{$usr}-name:after {
+    content: '#{$usr}';
+    border: $value+px solid $color;
+    margin: 10px;
+    padding: 15px;
+    display:inline-block;
+  }
+}
+
+$i: 1;
+
+@while $i < 5 {
+  .col-sm-#{$i} {
+    width: 80 * $i + px;
+    background: pink;
+  }
+  $i : $i + 1;
+}

@@ -1,6 +1,13 @@
-$bgcolor: #007bff;
-$white: #fff;
-$black: #000;
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import '_sub1.scss';
+
+* {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 article {
   &.section1 {
@@ -44,3 +51,44 @@ article {
     }
   }
 }
+
+#main {
+  $width: 10px !global; // 전역변수
+  border: $width solid red;
+  $main_color: #fff;
+  background-color: $main_color;
+  width: $main-width;
+}
+#sidebar {
+  width: $width * 50;
+  display: $in_b;
+}
+#content {
+  width: 500px;
+  width: $width;
+  display: $in-b;
+}
+#sidebar2 {
+  width: ($main_width/10);
+  height: 50px;
+  border: 1px solid opacify($red50, 0.1);
+  background-color: transparentize($red50, 0.3);
+  color: white;
+}
+
+p:before {
+  content: "Foo " + Bar;
+  font-family: sans- + "serif";
+}
+
+p.#{$name} {
+  #{$attr}-color:blue;
+}
+
+p {
+  $font-size: 12px;
+  $line-height: 30px;
+  font: #{$font-size}/#{$line-height};
+}
+
+/* 어렵군 */
